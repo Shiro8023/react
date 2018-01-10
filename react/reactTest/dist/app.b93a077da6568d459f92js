@@ -1,0 +1,855 @@
+webpackJsonp([5],{
+
+/***/ 0:
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__("3Sk7");
+module.exports = __webpack_require__("lVK7");
+
+
+/***/ }),
+
+/***/ "2cW/":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = function(cb) {
+	__webpack_require__.e/* require.ensure */(3).then((function(require) {
+		cb(__webpack_require__("0WGl"));
+	}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+}
+
+/***/ }),
+
+/***/ "3Sk7":
+/***/ (function(module, exports, __webpack_require__) {
+
+/* eslint-disable import/no-unresolved */
+module.exports = __webpack_require__("wO/z")
+
+
+/***/ }),
+
+/***/ "4ufr":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+function createThunkMiddleware(extraArgument) {
+  return function (_ref) {
+    var dispatch = _ref.dispatch,
+        getState = _ref.getState;
+    return function (next) {
+      return function (action) {
+        if (typeof action === 'function') {
+          return action(dispatch, getState, extraArgument);
+        }
+
+        return next(action);
+      };
+    };
+  };
+}
+
+var thunk = createThunkMiddleware();
+thunk.withExtraArgument = createThunkMiddleware;
+
+exports['default'] = thunk;
+
+/***/ }),
+
+/***/ "6I0C":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = function(cb) {
+	__webpack_require__.e/* require.ensure */(1).then((function(require) {
+		cb(__webpack_require__("1saR"));
+	}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+}
+
+/***/ }),
+
+/***/ "BVBi":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var GET_USER_INFO_REQUEST = exports.GET_USER_INFO_REQUEST = "userInfo/GET_USER_INFO_REQUEST";
+var GET_USER_INFO_SUCCESS = exports.GET_USER_INFO_SUCCESS = "userInfo/GET_USER_INFO_SUCCESS";
+var GET_USER_INFO_FAIL = exports.GET_USER_INFO_FAIL = "userInfo/GET_USER_INFO_FAIL";
+function getUserInfoRequest() {
+  return {
+    type: GET_USER_INFO_REQUEST
+  };
+}
+function getUserInfoSuccess() {
+  return {
+    type: GET_USER_INFO_SUCCESS,
+    userInfo: userInfo
+  };
+}
+function getUserInfoFail() {
+  return {
+    type: GET_USER_INFO_FAIL
+  };
+}
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(GET_USER_INFO_REQUEST, "GET_USER_INFO_REQUEST", "/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/actions/userInfo.js");
+
+  __REACT_HOT_LOADER__.register(GET_USER_INFO_SUCCESS, "GET_USER_INFO_SUCCESS", "/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/actions/userInfo.js");
+
+  __REACT_HOT_LOADER__.register(GET_USER_INFO_FAIL, "GET_USER_INFO_FAIL", "/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/actions/userInfo.js");
+
+  __REACT_HOT_LOADER__.register(getUserInfoRequest, "getUserInfoRequest", "/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/actions/userInfo.js");
+
+  __REACT_HOT_LOADER__.register(getUserInfoSuccess, "getUserInfoSuccess", "/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/actions/userInfo.js");
+
+  __REACT_HOT_LOADER__.register(getUserInfoFail, "getUserInfoFail", "/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/actions/userInfo.js");
+}();
+
+;
+
+/***/ }),
+
+/***/ "C+gl":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = reducer;
+
+var _counter = __webpack_require__("oTjF");
+
+/**
+ * 初始化state
+ */
+var initState = {
+  count: 0
+  /**
+   * reducer
+   */
+}; /**reducers */
+function reducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initState;
+  var action = arguments[1];
+
+  switch (action.type) {
+    case _counter.INCREMENT:
+      return {
+        count: state.count + 1
+      };
+    case _counter.DECREMENT:
+      return {
+        count: state.count - 1
+      };
+    case _counter.RESET:
+      return {
+        count: 0
+      };
+    default:
+      return state;
+  }
+}
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(initState, 'initState', '/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/reducers/counter.js');
+
+  __REACT_HOT_LOADER__.register(reducer, 'reducer', '/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/reducers/counter.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "Ff2c":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* noop */
+
+
+/***/ }),
+
+/***/ "HIVZ":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/* eslint-disable global-require, import/no-mutable-exports */
+
+let exportedModule;
+
+if (true) {
+  exportedModule = __webpack_require__("M/nl");
+} else {
+  exportedModule = require('./index.dev');
+}
+
+module.exports = exportedModule;
+
+/***/ }),
+
+/***/ "JU1R":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__("GiK3");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__("F8kA");
+
+var _Bundle = __webpack_require__("gf5I");
+
+var _Bundle2 = _interopRequireDefault(_Bundle);
+
+var _Home = __webpack_require__("gYwO");
+
+var _Home2 = _interopRequireDefault(_Home);
+
+var _Page = __webpack_require__("PGiq");
+
+var _Page2 = _interopRequireDefault(_Page);
+
+var _Counter = __webpack_require__("2cW/");
+
+var _Counter2 = _interopRequireDefault(_Counter);
+
+var _UserInfo = __webpack_require__("6I0C");
+
+var _UserInfo2 = _interopRequireDefault(_UserInfo);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import Hello from '../component/Hello/Hello';
+var Loading = function Loading() {
+    return _react2.default.createElement(
+        'div',
+        null,
+        ' Loading'
+    );
+};
+var createComponent = function createComponent(component) {
+    return function () {
+        return _react2.default.createElement(
+            _Bundle2.default,
+            { load: component },
+            function (Component) {
+                return Component ? _react2.default.createElement(Component, null) : _react2.default.createElement(Loading, null);
+            }
+        );
+    };
+};
+
+var getRouter = function getRouter() {
+    return _react2.default.createElement(
+        _reactRouterDom.BrowserRouter,
+        null,
+        _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(
+                'ul',
+                null,
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                        _reactRouterDom.Link,
+                        { to: '/' },
+                        '\u9996\u9875'
+                    )
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                        _reactRouterDom.Link,
+                        { to: '/page1' },
+                        'Page1'
+                    )
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                        _reactRouterDom.Link,
+                        { to: '/counter' },
+                        'Counter'
+                    )
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    _react2.default.createElement(
+                        _reactRouterDom.Link,
+                        { to: '/userinfo' },
+                        'UserInfo'
+                    )
+                )
+            ),
+            _react2.default.createElement(
+                _reactRouterDom.Switch,
+                null,
+                _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: createComponent(_Home2.default) }),
+                _react2.default.createElement(_reactRouterDom.Route, { path: '/page1', component: createComponent(_Page2.default) }),
+                _react2.default.createElement(_reactRouterDom.Route, { path: '/counter', component: createComponent(_Counter2.default) }),
+                _react2.default.createElement(_reactRouterDom.Route, { path: '/userinfo', component: createComponent(_UserInfo2.default) })
+            )
+        )
+    );
+};
+
+var _default = getRouter;
+exports.default = _default;
+;
+
+var _temp = function () {
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
+
+    __REACT_HOT_LOADER__.register(Loading, 'Loading', '/Users/monica/soft/workspace/vscode/react/reactTest/src/router/router.js');
+
+    __REACT_HOT_LOADER__.register(createComponent, 'createComponent', '/Users/monica/soft/workspace/vscode/react/reactTest/src/router/router.js');
+
+    __REACT_HOT_LOADER__.register(getRouter, 'getRouter', '/Users/monica/soft/workspace/vscode/react/reactTest/src/router/router.js');
+
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/monica/soft/workspace/vscode/react/reactTest/src/router/router.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "M/nl":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+
+var _AppContainer = __webpack_require__("sGP0");
+
+Object.defineProperty(exports, 'AppContainer', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_AppContainer).default;
+  }
+});
+
+var _utils = __webpack_require__("jpSU");
+
+Object.defineProperty(exports, 'hot', {
+  enumerable: true,
+  get: function get() {
+    return _utils.hot;
+  }
+});
+Object.defineProperty(exports, 'areComponentsEqual', {
+  enumerable: true,
+  get: function get() {
+    return _utils.areComponentsEqual;
+  }
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/***/ }),
+
+/***/ "PDYz":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = reducer;
+
+var _userInfo = __webpack_require__("BVBi");
+
+var initState = {
+  isLoading: false,
+  userInfo: {},
+  errorMsg: ''
+};
+function reducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initState;
+  var action = arguments[1];
+
+  switch (action.type) {
+    case _userInfo.GET_USER_INFO_REQUEST:
+      return _extends({}, state, {
+        isLoading: true,
+        userInfo: {},
+        errorMsg: ''
+      });
+    case _userInfo.GET_USER_INFO_SUCCESS:
+      return _extends({}, state, {
+        isLoading: false,
+        userInfo: action.userInfo,
+        errorMsg: ''
+      });
+    case _userInfo.GET_USER_INFO_FAIL:
+      return _extends({}, state, {
+        isLoading: false,
+        userInfo: {},
+        errorMsg: '请求错误'
+      });
+    default:
+      return state;
+  }
+}
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(initState, 'initState', '/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/reducers/userInfo.js');
+
+  __REACT_HOT_LOADER__.register(reducer, 'reducer', '/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/reducers/userInfo.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "PGiq":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = function(cb) {
+	__webpack_require__.e/* require.ensure */(0).then((function(require) {
+		cb(__webpack_require__("26LQ"));
+	}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+}
+
+/***/ }),
+
+/***/ "WqZW":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _redux = __webpack_require__("2KeS");
+
+var _reduxThunk = __webpack_require__("4ufr");
+
+var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
+
+var _reducers = __webpack_require__("qCuJ");
+
+var _reducers2 = _interopRequireDefault(_reducers);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddleware)(_reduxThunk2.default));
+var _default = store;
+exports.default = _default;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(store, 'store', '/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/store.js');
+
+  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/store.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "gYwO":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = function(cb) {
+	__webpack_require__.e/* require.ensure */(2).then((function(require) {
+		cb(__webpack_require__("+e9Q"));
+	}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+}
+
+/***/ }),
+
+/***/ "gf5I":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("GiK3");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Bundle = function (_Component) {
+  _inherits(Bundle, _Component);
+
+  function Bundle() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Bundle);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Bundle.__proto__ || Object.getPrototypeOf(Bundle)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+      mod: null
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(Bundle, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.load(this.props);
+    }
+  }, {
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps(nextProps) {
+      if (nextProps.load !== this.props.load) {
+        this.load(nextProps);
+      }
+    }
+  }, {
+    key: 'load',
+    value: function load(props) {
+      var _this2 = this;
+
+      this.setState({
+        mod: null
+      });
+      props.load(function (mod) {
+        _this2.setState({
+          mod: mod.default ? mod.default : mod
+        });
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return this.props.children(this.state.mod);
+    }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
+    }
+  }]);
+
+  return Bundle;
+}(_react.Component);
+
+var _default = Bundle;
+exports.default = _default;
+;
+
+var _temp2 = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(Bundle, 'Bundle', '/Users/monica/soft/workspace/vscode/react/reactTest/src/router/Bundle.js');
+
+  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/monica/soft/workspace/vscode/react/reactTest/src/router/Bundle.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "jpSU":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+const areComponentsEqual = exports.areComponentsEqual = (a, b) => a === b;
+const hot = exports.hot = () => Component => Component;
+
+/***/ }),
+
+/***/ "lVK7":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _react = __webpack_require__("GiK3");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__("O27J");
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _reactHotLoader = __webpack_require__("HIVZ");
+
+var _reactRedux = __webpack_require__("RH2O");
+
+var _store = __webpack_require__("WqZW");
+
+var _store2 = _interopRequireDefault(_store);
+
+var _router = __webpack_require__("JU1R");
+
+var _router2 = _interopRequireDefault(_router);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import Hello from './component/Hello/Hello';
+
+/**初始化 */
+// document.getElementById('app').innerHTML = "webpack work"
+/*使用es6尖头函数 */
+// var func = str => {
+//   document.getElementById('app').innerHTML = str;
+// };
+// func('now i am using babel');
+renderWithHotReload((0, _router2.default)());
+/**热更新 */
+if (false) {
+  module.hot.accept('./router/router', function () {
+    var getRouter = require('router/router').default;
+    renderWithHotReload(getRouter());
+  });
+}
+function renderWithHotReload(RootElement) {
+  _reactDom2.default.render(_react2.default.createElement(
+    _reactHotLoader.AppContainer,
+    null,
+    _react2.default.createElement(
+      _reactRedux.Provider,
+      { store: _store2.default },
+      RootElement
+    )
+  ), document.getElementById('app'));
+}
+// ReactDom.render(
+//     // <div>Hello React!</div>, document.getElementById('app')
+//     getRouter(),document.getElementById('app')
+//   );
+
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(renderWithHotReload, 'renderWithHotReload', '/Users/monica/soft/workspace/vscode/react/reactTest/src/index.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "oTjF":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.increment = increment;
+exports.decrement = decrement;
+exports.reset = reset;
+/**actions */
+var INCREMENT = exports.INCREMENT = "counter/INCREMENT";
+var DECREMENT = exports.DECREMENT = "counter/DECREMENT";
+var RESET = exports.RESET = "counter/RESET";
+
+function increment() {
+  return {
+    type: INCREMENT
+  };
+}
+function decrement() {
+  return {
+    type: DECREMENT
+  };
+}
+function reset() {
+  return {
+    type: RESET
+  };
+}
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(INCREMENT, "INCREMENT", "/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/actions/counter.js");
+
+  __REACT_HOT_LOADER__.register(DECREMENT, "DECREMENT", "/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/actions/counter.js");
+
+  __REACT_HOT_LOADER__.register(RESET, "RESET", "/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/actions/counter.js");
+
+  __REACT_HOT_LOADER__.register(increment, "increment", "/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/actions/counter.js");
+
+  __REACT_HOT_LOADER__.register(decrement, "decrement", "/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/actions/counter.js");
+
+  __REACT_HOT_LOADER__.register(reset, "reset", "/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/actions/counter.js");
+}();
+
+;
+
+/***/ }),
+
+/***/ "qCuJ":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = combineReducers;
+
+var _counter = __webpack_require__("C+gl");
+
+var _counter2 = _interopRequireDefault(_counter);
+
+var _userInfo = __webpack_require__("PDYz");
+
+var _userInfo2 = _interopRequireDefault(_userInfo);
+
+var _reactHotLoader = __webpack_require__("HIVZ");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function combineReducers() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var action = arguments[1];
+
+  return {
+    counter: (0, _counter2.default)(state.counter, action),
+    userInfo: (0, _userInfo2.default)(state.userInfo, action)
+  };
+}
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(combineReducers, 'combineReducers', '/Users/monica/soft/workspace/vscode/react/reactTest/src/redux/reducers.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "sGP0":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+
+var _react = __webpack_require__("GiK3");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+class AppContainer extends _react.Component {
+  render() {
+    if (this.props.component) {
+      return _react2.default.createElement(this.props.component, this.props.props);
+    }
+
+    return _react2.default.Children.only(this.props.children);
+  }
+} /* eslint-disable react/prop-types */
+
+exports.default = AppContainer;
+
+/***/ }),
+
+/***/ "wO/z":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+/* eslint-disable global-require, import/no-mutable-exports */
+
+let exportedModule;
+
+if (true) {
+  exportedModule = __webpack_require__("Ff2c").default;
+} else {
+  exportedModule = require('./patch.dev').default;
+}
+
+exports.default = exportedModule;
+
+/***/ })
+
+},[0]);

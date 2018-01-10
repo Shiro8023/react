@@ -1,0 +1,31 @@
+
+.nav-header {
+  border: 20px solid rgb(134, 197, 197);
+}
+.container {
+  border: 20px solid rgb(134, 197, 197);
+}
+ul {
+  list-style-type: none; /* 移除列表前的小标志*/
+  /*边距和填充设置为0 */
+  margin: 0px; 
+  padding: 0px;
+
+}
+li {
+  /* 文字横向排列*/
+  float: left; 
+  text-align: center;
+  border: 20px solid #ffffff;
+  border-radius: 25px;
+}
+li a {
+  display: block;/*链接设为块级元素*/
+  padding: 8px 50px; /*设置内边距*/
+  text-decoration: none; /* 去除文字下划线*/
+  text-align: center; /*文字居中*/
+}
+li a:hover {
+  background: #146c9c;  /*背景颜色*/
+  color:#fff; /*文字颜色*/
+}
